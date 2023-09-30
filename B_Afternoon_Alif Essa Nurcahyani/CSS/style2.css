@@ -1,0 +1,160 @@
+/*Resume*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Times New Roman', Times, serif ;
+}
+body{
+	width: 100%;
+    height: 100%;
+}
+.banner{
+	background: black;
+	background-image: url(bg.jpeg);
+	opacity: 9.0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 950px;
+	text-align: center;
+	color: white;
+}
+
+.container3 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #1a90ff, #ff66b2);
+    box-shadow: 0px 0px 20px rgba(255, 105, 180, 0.9), 0px 0px 30px rgba(26, 144, 255, 0.9);
+    transition: transform 0.3s;
+}
+
+.container3:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+.btnn {
+    position: relative;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 50px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 40px;
+    transition: 0.3s;
+    box-shadow: 6px 6px 30px rgba(38, 36, 37, 0.9);
+  }
+  
+  .btnn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 9px);
+    height: calc(100% - -5px);
+  background: linear-gradient(45deg,  #ff66b2, #1a90ff,  #1a90ff, #ff66b2);
+    transition: 0.3s ease-out;
+    box-shadow: 6px 6px 30px rgba(38, 36, 37, 0.9);
+    transform: scaleY(1);
+  }
+  
+  .btnn::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 9px);
+    height: calc(100% - 50px);
+    background: linear-gradient(45deg,  #ff66b2, #1a90ff,  #1a90ff, #ff66b2);
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+ 
+  }
+  
+  .btnn:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btnn:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btnn:hover {
+    border: 2px solid #fefefe;
+  }
+  
+  .btnn .spnn {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .contact{
+	text-align: center;
+	display: inline-block;
+	margin: 60px 150px;
+}
+
+
+.contact img{
+	display: inline-block;
+	width: 49px;
+	height: 47px;
+}
+
+
+
+
+  .download {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(45deg,  #ff66b2, #1a90ff,  #1a90ff, #ff66b2);
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 6px 6px 30px rgba(38, 36, 37, 0.9);
+    width: 15em;
+    padding: 1.5em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 20px;
+   }
+   
+   .download span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+   }
+   
+   .download span:after {
+    content: 'Resume';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+   }
+   
+   .download:hover span {
+    padding-right: 3.55em;
+   }
+   
+   .download:hover span:after {
+    opacity: 4;
+    right: 0;
+   }
+
+  
+
